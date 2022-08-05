@@ -4,7 +4,7 @@ import './sidebar.css'
 import  logo from '../../assets/images/favicon.png'
 
 import sidebar_items from '../../assets/JsonData/sidebar-routes.json'
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
+import { Link, useLocation} from 'react-router-dom'
 
 
 const SidebarItem = props => {

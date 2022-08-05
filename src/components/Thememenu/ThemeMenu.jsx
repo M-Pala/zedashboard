@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react'
+import React, {useEffect, useRef} from 'react'
 
 import {useThemeContext} from '../../context/theme_context'
 import { mode_settings } from '../../assets/ThemeData/mode_settings'
@@ -41,6 +41,7 @@ const ThemeMenu = () => {
     useEffect(()=>{
         localStorage.setItem('themeMode', currModeNode.class)
         localStorage.setItem('colorMode', currColorNode.class)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[currMode, currColor])
 
   return (
